@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Collection_views" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="111" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8hv-gB-2Oh">
+                        <rect key="frame" x="41" y="10" width="29" height="36"/>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hola como andas " borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Zb-vR-nnA">
+                        <rect key="frame" x="40" y="86" width="31" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+            <constraints>
+                <constraint firstItem="8hv-gB-2Oh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="188-8q-FcB"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="1Zb-vR-nnA" secondAttribute="trailing" constant="40" id="6cI-Wn-Ujf"/>
+                <constraint firstItem="1Zb-vR-nnA" firstAttribute="top" secondItem="8hv-gB-2Oh" secondAttribute="bottom" constant="40" id="EmN-ya-TMx"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="1Zb-vR-nnA" secondAttribute="bottom" constant="70" id="Y6f-t5-S8v"/>
+                <constraint firstItem="8hv-gB-2Oh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mo7-iJ-ror"/>
+                <constraint firstItem="1Zb-vR-nnA" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pVa-L2-GQa"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="8hv-gB-2Oh" secondAttribute="trailing" constant="41" id="tg9-Sa-8Da"/>
+            </constraints>
+            <size key="customSize" width="111" height="190"/>
+            <connections>
+                <outlet property="mainImage" destination="8hv-gB-2Oh" id="9LL-An-Iph"/>
+                <outlet property="mainText" destination="1Zb-vR-nnA" id="WCt-Es-Ed3"/>
+            </connections>
+            <point key="canvasLocation" x="212" y="54"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
